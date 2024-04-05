@@ -1,0 +1,133 @@
+<div class="poly-sheet row">
+
+    <article class="col-sm-9" ng-controller="subjectCtrl">
+        <!--Nội dung trang web-->
+        <div class="row">
+          <div ng-repeat="sub in list_subject">
+              <div class="col-sm-4">
+                  <div class="card">
+                      <div class="card-body">
+                          <a href="#!/quiz"><img src="images/logos/{{sub.Logo}}" alt=""></a>
+                      </div>
+                      <div class="card-footer">{{sub.Name}}</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+            
+    </article>
+
+    <aside class="col-sm-3">
+        <!--CartInfo-->
+
+        <!--/CartInfo-->
+
+        <!--Search-->
+        <div class="nn-cart">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <form method="post" action="/Product/Search">
+                        <input placeholder="Keywords" name="Keywords" class="form-control" />
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--/Search-->
+
+        <!--Category-->
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                    <span class="glyphicon glyphicon-th-list"></span>
+                    <strong>Chủng loại</strong>
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse">
+                <div class="list-group">
+                  <a href="#" class="list-group-item">Điện thoại di động <span class="badge">20</span></a>
+                  <a href="#" class="list-group-item">Máy tính xách tay <span class="badge">3</span></a>
+                  <a href="#" class="list-group-item">Máy tính để bàn <span class="badge">7</span></a>
+                  <a href="#" class="list-group-item">Quạt máy <span class="badge">9</span></a>
+                  <a href="#" class="list-group-item">Tivi <span class="badge">11</span></a>
+                  <a href="#" class="list-group-item">Tủ lạnh <span class="badge">15</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!--/Category-->
+
+        <!--Supplier-->
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                    <span class="glyphicon glyphicon-list-alt"></span>
+                    <strong>Nhà cung cấp</strong>
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse">
+                <div class="list-group">
+                  <a href="#" class="list-group-item">Apple</a>
+                  <a href="#" class="list-group-item">Samsung</a>
+                  <a href="#" class="list-group-item">Nokia</a>
+                  <a href="#" class="list-group-item">GL</a>
+                  <a href="#" class="list-group-item">Sony Ericson</a>
+                  <a href="#" class="list-group-item">Dell</a>
+                  <a href="#" class="list-group-item">Acer</a>
+                  <a href="#" class="list-group-item">HP</a>
+                  <a href="#" class="list-group-item">Toshiba</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!--/Supplier-->
+
+        <!--Special-->
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                    <strong>Hàng đặc biệt</strong>
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse">
+                <div class="list-group">
+                  <a href="#" class="list-group-item">Hàng bán chạy</a>
+                  <a href="#" class="list-group-item">Hàng mới</a>
+                  <a href="#" class="list-group-item">Hàng giảm giá</a>
+                  <a href="#" class="list-group-item">Hàng đặc biệt</a>
+                  <a href="#" class="list-group-item">Hàng xem nhiều</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!--/Special-->
+
+    </aside>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="?page=1&perPage=5">1</a></li>
+        <li class="page-item"><a class="page-link" href="?page=2&perPage=5">2</a></li>
+        <li class="page-item"><a class="page-link" href="?page=3&perPage=5">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    
+</div>
